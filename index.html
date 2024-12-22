@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Колорайзер</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<img src="src/play.png" id="playDown" class="playPos" onclick="playForm(this.src, 'down')">
+		<input type="range" min="5" max="90" step="1" value="10" id="downRange" oninput="setForm(this.value, 'down')" onchange="setForm(this.value,'down')">
+		<img src="src/play.png" id="playRight" class="playPos" onclick="playForm(this.src, 'right')">
+		<input type="range" min="5" max="90" step="1" value="10" id="rightRange" oninput="setForm(this.value, 'right')" onchange="setForm(this.value, 'right')">
+		<div id="radios">
+			<input type="radio" name="change" value="bg" checked oninput="changeWorkspace(this.value)" onchange="changeWorkspace(this.value)"> Фон
+			<input type="radio" name="change" value="inp" oninput="changeWorkspace(this.value)" onchange="changeWorkspace(this.value)"> Ввод
+			<input type="radio" name="change" value="text" oninput="changeWorkspace(this.value)" onchange="changeWorkspace(this.value)"> Текст
+		</div>
+		<div id="container">
+			<div id="left" class="cont">
+				<input type="text" id="textbox">
+			</div>
+			<div id="right" class="cont">
+				<img src="src/play.png" id="playRed" class="playColor" onclick="playColor(this.src, 'red')">
+				<input type="range" min="0" max="255" step="1" value="38" class="colorRange red" id="redRange" oninput="setColor(this.value, 'red')" onchange="setColor(this.value, 'red')"> <br>
+				<input type="text" class="colorVal red" id="redVal" value="38">
+				<img src="src/play.png" id="playGreen" class="playColor" onclick="playColor(this.src, 'green')">
+				<input type="range" min="0" max="255" step="1" value="38" class="colorRange green" id="greenRange" oninput="setColor(this.value, 'green')" onchange="setColor(this.value, 'green')"> <br>
+				<input type="text" class="colorVal green" id="greenVal" value="38">
+				<img src="src/play.png" id="playBlue" class="playColor" onclick="playColor(this.src, 'blue')">
+				<input type="range" min="0" max="255" step="1" value="48" class="colorRange blue" id="blueRange" oninput="setColor(this.value, 'blue')" onchange="setColor(this.value, 'blue')"> <br>
+				<input type="text" class="colorVal blue" id="blueVal" value="48">
+			</div>
+		</div>
+		<img src="src/stop.png" id="stop" onclick="stopAll()">
+		<img src="src/play.png" id="playWidth" class="playPos" onclick="playForm(this.src, 'width')">
+		<input type="range" min="5" max="90" step="1" value="40" id="widthRange" oninput="setForm(this.value, 'width')" onchange="setForm(this.value, 'width')">
+	</body>
+</html>

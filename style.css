@@ -1,0 +1,191 @@
+:root {
+	--bgcleftR: 38;
+	--bgcleftG: 38;
+	--bgcleftB: 48;
+	
+	--bgcinpR: 53; 
+	--bgcinpG: 55;
+	--bgcinpB: 64;
+	
+	--txtcinpR: 215;
+	--txtcinpG: 235;
+	--txtcinpB: 235;
+	
+	--tbwidth: 80%;
+	--tbdown: 10%;
+	--tbright: 10%;
+}
+
+/*color*/
+body {
+	background: #101010;
+}
+
+#left {
+	background-color: rgb(var(--bgcleftR), var(--bgcleftG), var(--bgcleftB));
+}
+
+#right {
+	background:#21212A;
+}
+
+#textbox {
+	background: rgb(var(--bgcinpR),var(--bgcinpG),var(--bgcinpB));
+	color: rgb(var(--txtcinpR),var(--txtcinpG),var(--txtcinpB));
+}
+
+.colorName {
+	color:#D7EBEB;
+}
+
+#radios {
+	background: #262630;
+	color: #D7EBEB;
+}
+
+.colorVal {
+	background: rgb(53,55,64);
+}
+
+#redVal {
+	color: rgb(255,0,0);
+}
+
+#greenVal {
+	color: rgb(0,255,0);
+}
+
+#blueVal {
+	color: rgb(0,0,255);
+}
+
+/*form*/
+#container {
+	position: absolute;
+	left: 25%;
+	top: 25%;
+	width: 50%;
+	height:50%;
+}
+
+.cont {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+#right {
+	left: 50%;
+}
+
+#textbox {
+	width: var(--tbwidth);
+	margin-top: var(--tbdown);
+	margin-left: var(--tbright);
+	height: 10%;
+	border-radius: 5px;
+}
+
+.colorRange {
+	position: absolute;
+	width: 50%;
+	left: 20%;
+}
+
+.colorVal {
+	position: absolute;
+	left: 72%;
+	width: 6%;
+}
+
+.red {
+	top: 10%;
+}
+
+.green {
+	top: 25%;
+}
+
+.blue {
+	top: 40%;
+}
+
+#downRange {
+	transform: rotate(90deg);
+	position: absolute;
+	left: 11%;
+	top: 25%;
+	height: 50%;
+	width: 25%
+}
+
+#rightRange {
+	position: absolute;
+	left: 25%;
+	top: -3%;
+	height: 50%;
+	width: 25%
+}
+
+#widthRange {
+	position: absolute;
+	left: 37.5%;
+	top: 53%;
+	height: 50%;
+	width: 12.5%
+}
+
+#radios {
+	position: absolute;
+	left: 51%;
+	top: 22%;
+	width: 15%;
+	height: 4%;
+	border-radius: 5px;
+}
+
+#playRight {
+	left: 23%;
+	top: 18%;
+}
+
+#playDown {
+	left: 21%;
+	top: 22%;
+}
+
+#playWidth {
+	left: 35%;
+	top: 76%;
+}
+
+#playRed {
+	top: 8%;
+}
+
+#playGreen {
+	top: 23%;
+}
+
+#playBlue {
+	top: 38%;
+}
+
+.playPos {
+	position: absolute;
+	width: 2%;
+}
+
+.playColor {
+	position: absolute;
+	width: 8%;
+	left: 10%;
+}
+
+#stop {
+	position: absolute;
+	width: 2%;
+	left: 25%;
+	top: 77%;
+}
